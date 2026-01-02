@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my portfolio</h1>
+        <br>
+        <br>
+        <div class="nav-buttons">
+            <button onclick="scrollToSection('about')" class="button">About</button>
+            <button onclick="scrollToSection('skills')" class="button">Skills</button>
+            <button onclick="scrollToSection('projects')" class="button">Projects</button>
+            <button onclick="scrollToSection('contact')" class="button">Contact</button>
+        </div>
+
+
+    </header>
+
+    <main>
+
+        <section id="about">
+
+
+            <h1>Prazual VITC</h1>
+            <img src="1.jpg">
+            <p>I am currently pursuing my B.Tech in <br> <em> <b>Vellore Institute of Technology</b> </em> </p>
+            <p>I am pursuing it in <br> <b>Chennai</b></p>
+            <p>I am doing mechanical engineeering</p>
+            <p>I am from 2022-2026 Batch</p>
+            <p>I am from amalapuram</p>
+
+
+
+        </section>
+
+        <section id="skills">
+            <h1>My skills</h1>
+            <ol>
+                <li>Python basics</li><br>
+                <li>Java basics</li><br>
+                <li>excel basics</li><br>
+                <li>HTML basics</li><br>
+                <li>CSS basics</li><br>
+                <li>Solidworks basics</li><br>
+                <li>Communication skills</li><br>
+            </ol>
+
+        </section>
+
+
+        <section id="projects">
+            <h1>My Projects</h1>
+            <p>Portfolio Website</p>
+            <br>
+            <h2>Certifications</h2>
+            <p>Basic Python Programming</p>
+            <p>Object-Oriented Principles in Java: <br> Abstraction,
+                Encapsulation, Inheritance and Polymorphism</p>
+            <p>Introduction to Data Analysis using Excel</p>
+            <p>Node.js for Beginners</p>
+        </section>
+
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <p>feel free to contact me using the form given below:</p>
+            <form action="https://formspree.io/f/xbdjvdeq" method="post">
+
+                <div class="form-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+                </div>
+                <br>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                </div>
+                <br>
+
+
+                <b>Choose your gender:</b>
+                <div class="inline-group">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <br>
+
+
+                <b>Select your interests:</b>
+                <div class="inline-group">
+                    <input type="checkbox" id="reading" value="reading">
+                    <label for="reading">Reading</label>
+
+                    <input type="checkbox" id="coding" value="coding">
+                    <label for="coding">Coding</label>
+                </div>
+                <br>
+
+
+
+                <label for="bio">Bio(upto 200 characters):</label>
+                <input type="text">
+
+                <button type="submit" class="submit">Submit</button>
+
+            </form>
+        </section>
+    </main>
+    <button class="fixedButton" onclick="scrollToTop()">Top</button>
+
+    <footer>
+        <p>@ 2025 My portfolio</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
